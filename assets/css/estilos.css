@@ -20,6 +20,7 @@ body {
   background-position: top;
   background-size: contain;
   background-repeat: no-repeat;
+  display: flex;
 }
 
 
@@ -27,7 +28,7 @@ body {
 
 #Animales {
   height: 100%;
-  background: #f0f0f0;
+  background: #f0f0f000;
 }
 
 #Animales div div {

@@ -6,8 +6,10 @@ const eventsSelectChange = () => {
         const animales = await consumoAnimales();
         const animalBuscado = buscarPorNombre(animal.value, animales.animales);
         renderizarImagen('preview', animalBuscado);
+        reproducirSonido(animalBuscado)
     });
 }
+
 
 export{
     eventsSelectChange
