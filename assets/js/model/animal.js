@@ -1,13 +1,17 @@
 export default class Animal {
-    #nombre
-    #edad
-    #img
+    #nombre;
+    #edad;
+    #img;
+    #comentarios;
+    #sonido;
 
 
 constructor(nombre, edad, img){
     this.#nombre = nombre;
     this.#edad = edad;
     this.#img = img;
+    this.#comentarios = comentarios
+    this.#sonido = sonido
 }
 
 get nombre() {
@@ -32,5 +36,21 @@ get img() {
 
 set img(img) {
     this.#img = img;
+}
+
+get comentarios() {
+    return this.#comentarios;
+}
+
+set comentarios(comentarios) {
+    this.#comentarios = comentarios;
+}
+
+get sonido() {
+    return this.#sonido;
+}
+
+set sonido(sonido) {
+    this.#sonido = sonido;
 }
 }
